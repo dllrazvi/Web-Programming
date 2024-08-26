@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Stars Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Movie Stars Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#actors">Popular Actors</a></li>
+            <li><a href="#actresses">Famous Actresses</a></li>
+        </ul>
+    </nav>
+
+    <section id="actors">
+        <h2>Popular Actors</h2>
+        <p>Explore the world of talented actors who have graced the silver screen with their incredible performances.</p>
+
+        <article>
+            <h3>Tom Hanks</h3>
+            <img src="Tom_Hanks.jpg" alt="Tom Hanks">
+            <p>An iconic actor known for his versatile roles, from comedy to drama. Tom Hanks has won multiple awards for his outstanding performances.</p>
+        </article>
+
+        <article>
+            <h3>Meryl Streep</h3>
+            <img src="meryl_streep.jpg" alt="Meryl Streep">
+            <p>Considered one of the greatest actresses of her generation, Meryl Streep has captivated audiences with her exceptional acting skills.</p>
+        </article>
+    </section>
+
+    <section id="actresses">
+        <h2>Famous Actresses</h2>
+        <p>Discover the leading ladies who have left an indelible mark in the world of cinema.</p>
+
+        <article>
+            <h3>Leonardo DiCaprio</h3>
+            <img src="leonardo_dicaprio.jpg" alt="Leonardo DiCaprio">
+            <p>Known for his intense and powerful performances, Leonardo DiCaprio has become a household name in the film industry.</p>
+        </article>
+
+        <article>
+            <h3>Jennifer Lawrence</h3>
+            <img src="jennifer_lawrence.jpg" alt="Jennifer Lawrence">
+            <p>A talented actress celebrated for her authenticity and versatility in portraying a wide range of characters.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Movie Stars Page. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
