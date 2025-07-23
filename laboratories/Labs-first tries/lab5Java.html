@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        .thumbnail:hover {
+            cursor: pointer;
+            opacity: 0.6;
+        }
+        .thumbnail-img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+        .preview-img {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+<div id="gallery">
+    <img src="download.jpg" class="thumbnail-img thumbnail" data-original="download.jpg">
+    <img src="download1.jpeg" class="thumbnail-img thumbnail" data-original="download1.jpeg">
+    <img src="download2.jpeg" class="thumbnail-img thumbnail" data-original="download2.jpeg">
+</div>
+
+<div id="preview">
+    <img src="placeholder.jpg" class="preview-img" id="bigImage">
+</div>
+
+<script>
+// When the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all the thumbnails
+    var thumbnails = document.querySelectorAll('.thumbnail');
+
+    // Add mouseover event to each thumbnail
+    thumbnails.forEach(function(thumbnail) {
+        thumbnail.addEventListener('mouseover', function() {
+            // Set the src of #bigImage to the data-original of the hovered thumbnail
+            document.getElementById('bigImage').src = thumbnail.getAttribute('src');
+        });
+    });
+});
+</script>
+
+</body>
+</html>
